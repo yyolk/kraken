@@ -270,6 +270,7 @@ p {
 .text-taller {
     font-size: 3em;
     line-height: 1.4;
+    font-weight: bold;
 }
 
 @media (min-width: 40em) {
