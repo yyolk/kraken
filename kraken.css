@@ -117,7 +117,7 @@ a:hover, a:active {
 /*  Mobile-first. Single-column layout by default
  *  Container sets the maximum page width. Adjust as needed. */
 .container { 
-    max-width: 75.3em;
+    max-width: 40em;
     width: 88%;
     margin-left: auto; 
     margin-right: auto;
@@ -236,6 +236,7 @@ body {
     line-height: 1.470588235; 
     color: #272727; 
     background: #ffffff;
+    border-top: .470588235em solid #e5e5e5;
 }
 
 p { 
@@ -258,6 +259,11 @@ p {
 
 .text-tall { 
     font-size: 1.166666667em; 
+    line-height: 1.4;
+}
+
+.text-taller {
+    font-size: 3em;
     line-height: 1.4;
 }
 
@@ -724,6 +730,126 @@ select:focus {
 /*  A placeholder for image carousel styling.
  *  Try FlexSlider by WooThemes.
  *  https://github.com/cferdinandi/FlexSlider */
+
+
+
+
+
+/*  BACKGROUND COLORS */
+
+.bg-gray {
+    background-color: #f4f4f4;
+    padding-top: 1.529411765em;
+    padding-bottom: 1.529411765em;
+}
+
+.hero {
+    background-color: #e5e5e5;
+    padding: .470588235em;
+    margin-bottom: 1.529411765em;
+    border-radius: .235294118em;
+}
+
+
+
+
+
+/*  TABLES */
+/*  Table styling */
+
+/*  Removes default browser settings
+ *  and evens out inconsistencies. */
+table { 
+    max-width: 100%; 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+}
+
+/*  Sets table width to 100%.
+ *  Adds bottom-margin. */
+.table { 
+    width: 100%; 
+    margin-bottom: 1.529411765em;
+}
+
+/*  Adds table cell padding,
+ *  aligns text to the left,
+ *  and adds a top border to each cell. */
+.table th, .table td { 
+    padding: .470588235em; 
+    text-align: left; 
+    border-top: .071428571em solid #b8b8b8; 
+}
+
+/*  Sets table header font-weight to bold.
+ *  Aligns table header text to the bottom of each cell. */
+.table th { 
+    font-weight: bold; 
+    vertical-align: bottom; 
+}
+
+/*  Aligns cell text to the top of each cell. */
+.table td { 
+    vertical-align: top; 
+}
+
+/*  Removes the border-top from the first row. */
+.table thead:first-child tr th, 
+.table thead:first-child tr td { 
+    border-top: 0; 
+}
+
+/*  Adds border-top between two table-body sections. */
+.table tbody + tbody { 
+    border-top: .142857143em solid #b8b8b8; 
+}
+
+/*  Reduces cell padding */
+.table-condensed th, 
+.table-condensed td { 
+    padding: .470588235em .294117647em; 
+}
+
+/* Adds borders and border-radius. */
+.table-bordered { 
+    border: .071428571em solid #b8b8b8; 
+    border-collapse: separate; 
+    *border-collapse: collapsed; 
+    border-radius: .470588235em; 
+}
+
+.table-bordered th + th, 
+.table-bordered td + td, 
+.table-bordered th + td, 
+.table-bordered td + th { 
+    border-left: .071428571em solid #b8b8b8; 
+}
+
+.table-bordered thead:first-child tr:first-child th, 
+.table-bordered tbody:first-child tr:first-child th, 
+.table-bordered tbody:first-child tr:first-child td { 
+    border-top: 0; 
+}
+
+.table-bordered thead:first-child tr:first-child th:first-child, 
+.table-bordered tbody:first-child tr:first-child td:first-child { 
+    border-radius: .470588235em 0 0 0; 
+}
+
+.table-bordered thead:first-child tr:first-child th:last-child, 
+.table-bordered tbody:first-child tr:first-child td:last-child { 
+    border-radius: 0 .470588235em 0 0; 
+}
+
+.table-bordered thead:last-child tr:last-child th:first-child, 
+.table-bordered tbody:last-child tr:last-child td:first-child { 
+    border-radius: 0 0 0 .470588235em; 
+}
+
+.table-bordered thead:last-child tr:last-child th:last-child, 
+.table-bordered tbody:last-child tr:last-child td:last-child { 
+    border-radius: 0 0 .470588235em 0; 
+}
 
 
 
