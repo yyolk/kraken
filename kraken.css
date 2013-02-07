@@ -646,11 +646,8 @@ select:focus {
 
 
 /*  ICONS */
-/*  A placeholder for icon fonts.
- *  Learn more at http://gomakethings.com/icon-fonts/ */
+/*  A placeholder for icon fonts. */
 
-/*  @font-face code.
- *  Commented Out.
 @font-face { 
     font-family: 'icomoon'; 
     src: url('fonts/icomoon.eot'); 
@@ -672,7 +669,9 @@ select:focus {
     font-smoothing: antialiased; 
     text-rendering: optimizeLegibility; 
 }
-*/
+
+.icon-logo:before { content: "\e000"; }
+.icon-github:before { content: "\e001"; }
 
 
 
