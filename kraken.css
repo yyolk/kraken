@@ -151,6 +151,10 @@ a:hover, a:active {
         width: 46.969696969697%;
     }
 
+    .grid-two-thirds { 
+        width: 63.636363636364%;
+    }
+
     /*  Reverses order of grid for content choreography */
     .grid-flip {
         float: right;
@@ -177,7 +181,8 @@ a:hover, a:active {
         width: 46.969696969697%;
     }
 
-    .grid-4 { 
+    .grid-4,
+    .grid-two-thirds { 
         width: 63.636363636364%;
     }
 
@@ -340,20 +345,21 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 1em;
 }
 
-h1 { 
+h1, .h1 { 
     font-size: 1.529411765em; 
     padding-top: .5em;
 }
 
-h2 { 
+h2, .h2 { 
     font-size: 1.352941176em; 
 }
 
-h3 { 
+h3, .h3 { 
     font-size: 1.176470588em; 
 }
 
-h4, h5, h6 { 
+h4, h5, h6,
+.h4, .h5, .h6 { 
     font-size: .882352941em; 
     font-style: italic; 
 }
@@ -363,7 +369,7 @@ h4, .h4 {
 }
 
 @media (min-width: 40em) {
-    h1 {
+    h1, .h1 {
         font-size: 1.764705882em;
     }
 }
