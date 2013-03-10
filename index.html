@@ -43,59 +43,225 @@
 
 	        <h1 class="text-center">The Grid</h1>
 
-	        <p>Kraken uses <a href="http://cferdinandi.github.com/origami/">Origami</a>, a fluid, mobile-first grid system.</p>
+	        <p>Kraken uses a fluid, mobile-first 6-column grid system. It includes offsets, grid nesting, and special classes for content choreography and image galleries.</p>
 
-	        <p>It features a fluid 6-column grid that can scale to any size. It includes offsets, grid nesting, and special classes for content choreography and image galleries.</p>
+	        <h2>The Base Grid</h2>
 
-	        <p>View a full tutorial on the <a href="http://cferdinandi.github.com/origami/">Origami project page</a>.</p>
+            <div class="row">
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+            </div>
 
-	        <div class="row text-center">
-	            <div class="grid-1"><div class="hero">.grid-1</div></div>
-	            <div class="grid-1"><div class="hero">.grid-1</div></div>
-	            <div class="grid-1"><div class="hero">.grid-1</div></div>
-	            <div class="grid-1"><div class="hero">.grid-1</div></div>
-	            <div class="grid-1"><div class="hero">.grid-1</div></div>
-	            <div class="grid-1"><div class="hero">.grid-1</div></div>
-	        </div>
+            <div class="row">
+                <div class="grid-2"><div class="hero">.grid-2</div></div>
+                <div class="grid-2"><div class="hero">.grid-2</div></div>
+                <div class="grid-2"><div class="hero">.grid-2</div></div>
+            </div>
 
-	        <div class="row text-center">
-	            <div class="grid-2"><div class="hero">.grid-2</div></div>
-	            <div class="grid-2"><div class="hero">.grid-2</div></div>
-	            <div class="grid-2"><div class="hero">.grid-2</div></div>
-	        </div>
+            <div class="row">
+                <div class="grid-third"><div class="hero">.grid-third</div></div>
+                <div class="grid-two-thirds"><div class="hero">.grid-two-thirds</div></div>
+            </div>
 
-	        <div class="row text-center">
-	            <div class="grid-3"><div class="hero">.grid-3</div></div>
-	            <div class="grid-3"><div class="hero">.grid-3</div></div>
-	        </div>
+            <div class="row">
+                <div class="grid-3"><div class="hero">.grid-3</div></div>
+                <div class="grid-3"><div class="hero">.grid-3</div></div>
+            </div>
 
-    	        <div class="row text-center">
-	            <div class="grid-4 offset-1"><div class="hero">.grid-4 .offset-1</div></div>
-	        </div>
+            <div class="row">
+                <div class="grid-half"><div class="hero">.grid-half</div></div>
+                <div class="grid-half"><div class="hero">.grid-half</div></div>
+            </div>
 
-	        <pre>&lt;div class="row"&gt;
-    &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
-    &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
-    &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
-    &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
-    &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
-    &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
-&lt;/div&gt;
+            <div class="row">
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+                <div class="grid-4"><div class="hero">.grid-4</div></div>
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+            </div>
 
-&lt;div class="row"&gt;
-    &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
-    &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
-    &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
-&lt;/div&gt;
+            <div class="row">
+                <div class="grid-6"><div class="hero">.grid-6</div></div>
+            </div>
 
-&lt;div class="row"&gt;
-    &lt;div class="grid-3"&gt;.grid-3&lt;/div&gt;
-    &lt;div class="grid-3"&gt;.grid-3&lt;/div&gt;
-&lt;/div&gt;
+            <pre>&lt;div class="container"&gt;
+    &lt;p&gt;Origami is built on a fluid 6-column grid.&lt;/p&gt;
+    
+    &lt;div class="row"&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+    &lt;/div&gt;
 
-&lt;div class="row"&gt;
-    &lt;div class="grid-4 offset-1"&gt;.grid-4 .offset-1&lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
+        &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
+        &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="grid-third"&gt;.grid-third&lt;/div&gt;
+        &lt;div class="grid-two-third"&gt;.grid-two-thirds&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="grid-3"&gt;.grid-3&lt;/div&gt;
+        &lt;div class="grid-3"&gt;.grid-3&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="grid-half"&gt;.grid-half&lt;/div&gt;
+        &lt;div class="grid-half"&gt;.grid-half&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+        &lt;div class="grid-4"&gt;.grid-4&lt;/div&gt;
+        &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="grid-6"&gt;.grid-6&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</pre>
+
+
+	        <h2>Offsets</h2>
+
+	        <p>Push grids to the right by adding an <code>.offset-*</code> class.</p>
+
+	        <p class="text-small"><em><strong>Note:</strong> The grids and offsets cannot add up to more than 6.</em></p>
+
+            <div class="row">
+                <div class="grid-4 offset-2"><div class="hero">.grid-4 .offset-2</div></div>
+            </div>
+
+            <div class="row">
+                <div class="grid-1"><div class="hero">.grid-1</div></div>
+                <div class="grid-3 offset-1"><div class="hero">.grid-3 .offset-1</div></div>
+            </div>
+
+            <pre>&lt;div class="row"&gt;
+    &lt;div class="grid-4 offset-2"&gt;.grid-4 .offset-2&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+    &lt;div class="grid-1"&gt;.grid-1&lt;/div&gt;
+    &lt;div class="grid-3 offset-1"&gt;.grid-3 .offset-1&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+	        <h2>Content Choreography</h2>
+
+	        <p>Flip the order of a grid on bigger screens by adding the <code>.grid-flip</code> class.</p>
+
+            <div class="row">
+                <div class="grid-2 grid-flip"><div class="hero">First in HTML</div></div>
+                <div class="grid-4"><div class="hero">Second in HTML</div></div>
+            </div>
+
+            <pre>&lt;div class="row"&gt;
+    &lt;div class="grid-2 grid-flip"&gt;First in HTML&lt;/div&gt;
+    &lt;div class="grid-4"&gt;Second in HTML&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+            	<h2>Image Gallery</h2>
+
+            	<p>Display images in a responsive gallery by using the <code>.grid-img</code> class.</p>
+
+            	<p class="text-small"><em><strong>Note:</strong> You can add any number of image grids to a <code>.row</code>. They'll automatically adjust themselves.</em></p>
+
+            <div class="row">
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+                <div class="grid-img"><p><img src="img/emu.jpg" title="Picture an emu"></p></div>
+            </div>
+
+            <pre>&lt;div class="row"&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="grid-img"&gt;&lt;p&gt;&lt;img src="img/emu.jpg"&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+            <h2>Nesting</h2>
+
+            	<p>Because Kraken uses a fluid layout, you can nest grids - useful if you need more complex layouts.</p>
+
+            	<p class="text-small"><em><strong>Note:</strong> Because the margins between columns are percentage based, nested grid spacing won't be a pixel-to-pixel match to unnested grids.</em></p>
+
+            <div class="row">
+                <div class="grid-3"><div class="hero">
+                    .grid-3
+                    <div class="row">
+                        <div class="grid-2"><div class="hero hero-dark">.grid-2</div></div>
+                        <div class="grid-2"><div class="hero hero-dark">.grid-2</div></div>
+                        <div class="grid-2"><div class="hero hero-dark">.grid-2</div></div>
+                    </div>
+                </div></div>
+                <div class="grid-3"><div class="hero">
+                    .grid-3
+                    <div class="row">
+                        <div class="grid-3"><div class="hero hero-dark">.grid-3</div></div>
+                        <div class="grid-3"><div class="hero hero-dark">.grid-3</div></div>
+                    </div>
+                </div></div>
+            </div>
+
+            <pre>&lt;div class="row"&gt;
+    &lt;div class="grid-3"&gt;
+        .grid-3
+        &lt;div class="row"&gt;
+            &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
+            &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
+            &lt;div class="grid-2"&gt;.grid-2&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-3"&gt;
+        .grid-3
+        &lt;div class="row"&gt;
+            &lt;div class="grid-3"&gt;.grid-3&lt;/div&gt;
+            &lt;div class="grid-3"&gt;.grid-3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+            <h2>Changing the Page Width</h2>
+
+            <p>Kraken has a page width of 80em (approximately 1280px) by default.</p>
+
+            <p>You can adjust this by changing the <code>max-width</code> on the <code>.container</code> class.</p>
+
+            <pre>.container { 
+    max-width: 80em;
+    ...
+}</pre>
 
 	        <hr>
 
@@ -483,11 +649,6 @@ You can also include superscripts&lt;sup&gt;1&lt;/sup&gt; and subscripts&lt;sub&
 
         </article>
 	</footer>
-
-
-    <!-- Javascript -->
-    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-    <script type='text/javascript' src='scripts.js'></script>
 
 </body>
 </html>

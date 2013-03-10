@@ -756,6 +756,11 @@ select:focus {
     border-radius: .235294118em;
 }
 
+.hero-dark {
+    background-color: #b8b8b8;
+    margin-bottom: 0;
+}
+
 
 
 
