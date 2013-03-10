@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Kraken - A lightweight front-end boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="kraken.css" type="text/css" />
+
+    <!-- HTML5 Shim for IE 6-8 -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="space-bottom">
+	    <article class="container">
+
+            <h1 class="text-taller no-space-bottom text-center"><i class="icon-logo"></i> Kraken</h1>
+            <p class="text-center"><a href="index.html">&larr; Kraken Home</a></p>
+
+
+	        <h1 class="text-center">Typography</h1>
+
+	        <p>Kraken uses relative sizing (ems and %, not pixels) for everything.</p>
+
+	        <p>The <code>body</code> has a base <code>font-size</code> of 106.25%, which is 17px on browsers with default font settings. All other sizes are in ems. Changing the <code>font-size</code> on the <code>body</code> element will adjust the typographical scale for the entire site.</p>
+
+	        <p>The <code>font-family</code> on the <code>body</code> is <code>"Helvetica Neue", Arial, sans-serif</code>. This sets the typeface for the entire site. Adjust as needed.</p>
+
+	        <p>The typographic scale was built using <a href="http://lamb.cc/typograph/">Iain Lamb's Typograph app</a>.</p>
+
+
+	        <h2 class="text-center">Text Basics</h2>
+
+            <p>
+                Default text.<br>
+	            <span class="text-muted">Muted text.</span><br>
+	            <span class="text-small">Small text.</span><br>
+	            <span class="text-tall">Tall text.</span><br>
+	            <a href="#">Hyperlinks.</a><br>
+	            <strong>Bold</strong> and <em>italics</em>.
+	        </p>
+
+	        <pre>Default text.
+&lt;span class="text-muted"&gt;Muted text.&lt;/span&gt;
+&lt;span class="text-small"&gt;Small text.&lt;/span&gt;
+&lt;span class="text-tall"&gt;Tall text.&lt;/span&gt;
+&lt;a href="#"&gt;Hyperlinks.&lt;/a&gt;
+&lt;strong&gt;Bold&lt;/strong&gt; and &lt;em&gt;italics&lt;/em&gt;.</pre>
+
+            <p><strong>Note:</strong> Because Kraken uses relative sizing, you should always apply <code>.text-tall</code> and <code>.text-small</code> classes to a <code>&lt;span&gt;</code> element and not directly to a <code>&lt;p&gt;</code>. Otherwise, your spacing will get all messed up.</p>
+
+            <div class="row">
+                <div class="grid-3">
+                    <strong>This</strong>
+                    <pre>&lt;p&gt;
+    &lt;span class="text-small"&gt;
+        Small text.
+    &lt;/span&gt;
+&lt;/p&gt;</pre>
+                </div>
+                <div class="grid-3">
+                    <strong>Not This</strong>
+                    <pre>&lt;p class="text-small"&gt;
+    Small text.
+&lt;/p&gt;</pre>
+                </div>
+            </div>
+
+
+            <h2 class="text-center">Headings</h2>
+
+            <p>Kraken includes styling for <code>h1</code> through <code>h6</code> headings.</p>
+
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2</h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+
+            <pre>&lt;h1&gt;h1. Heading 1&lt;/h1&gt;
+&lt;h2&gt;h2. Heading 2&lt;/h2&gt;
+&lt;h3&gt;h3. Heading 3&lt;/h3&gt;
+&lt;h4&gt;h4. Heading 4&lt;/h4&gt;
+&lt;h5&gt;h5. Heading 5&lt;/h5&gt;
+&lt;h6&gt;h6. Heading 6&lt;/h6&gt;</pre>
+
+            <h3 class="text-center">Semantic Heading Classes</h3>
+
+            <p>All heading values can also be applied as classes. For example, if a heading should be an <code>h1</code> element semantically, but you would like it to be styled as an <code>h4</code> element, you can apply <code>class="h4"</code> to the <code>h1</code> element.</p>
+
+            <h1 class="h4">This is an h1 heading that's styled as an h4 heading</h1>
+
+            <pre>&lt;h1 class="h4"&gt;This is an h1 heading that's styled as an h4 heading&lt;/h1&gt;</pre>
+
+
+            <h2 class="text-center">Quotes & Citations</h2>
+
+            <blockquote>Once someone said something so important, it was deemed worthy of repeating here in the form of a blockquote. This is that blockquote.</blockquote>
+
+            <p>You can also include superscripts<sup>1</sup> and subscripts<sub>xyz</sub>.</p>
+
+            <pre>&lt;blockquote&gt;Once someone said something so important, it was deemed worthy of repeating here in the form of a blockquote. This is that blockquote.&lt;/blockquote&gt;
+
+You can also include superscripts&lt;sup&gt;1&lt;/sup&gt; and subscripts&lt;sub&gt;xyz&lt;/sub&gt;.</pre>
+
+
+	        <h2 class="text-center">Code</h2>
+
+	        <p>Here's some code that's within a sentence. The <code>.js</code> file is very important.</p>
+
+            <p>Here's some preformatted text:</p>
+            
+	        <pre>.js {
+    color: #272727;
+    background: #ffffff;
+}</pre>
+
+            <pre>&lt;p&gt;Here's some code that's within a sentence. The &lt;code&gt;.js&lt;/code&gt; file is very important.&lt;/p&gt;
+
+&lt;p&gt;Here's some preformatted text:&lt;/p&gt;
+
+&lt;pre&gt;.js {
+    color: #272727;
+    background: #ffffff;
+}&lt;/pre&gt;</pre>
+
+            <p><strong>Note:</strong> You'll need to escape brackets contained in code by typing &amp;lt; for <code>&lt;</code> and &amp;gt; for <code>&gt;</code>.
+
+
+	        <h2 class="text-center">Lines</h2>
+
+	        <p>Add lines to your HTML using the <code>&lt;hr&gt;</code> element.</p>
+
+
+            <hr>
+
+	        <h1 class="text-center">Learn More</h1>
+
+            <ol>
+                <div class="row">
+                    <div class="grid-3">
+                        <li><a href="grid.html">The Grid</a></li>
+                        <li><span class="text-muted">Typography</span></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                    </div>
+                    <div class="grid-3">
+                        <li><a href="details.html">Alignment, Spacing & Visibility</a></li>
+                        <li><a href="addons.html">Add-Ons</a></li>
+                        <li><a href="browsers.html">Browser Support</a></li>
+                    </div>
+                </div>
+            </ol>
+
+        </article>
+	</section>
+
+	<footer class="bg-gray">
+        <article class="container">
+
+            <p class="text-small text-muted text-center">Built by <a href="http://gomakethings.com">Chris Ferdinandi</a>. Licensed under <a href="http://www.wtfpl.net/">WTFPL</a>.</p>
+
+        </article>
+	</footer>
+
+</body>
+</html>
