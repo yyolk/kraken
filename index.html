@@ -11,6 +11,19 @@
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144.png">
+
+    <!-- MS Homescreen Icons -->
+    <meta name="msapplication-TileColor" content="#0088cc">
+    <meta name="msapplication-TileImage" content="img/ms-touch-icon.png">
 </head>
 
 <body>
@@ -21,27 +34,61 @@
 	            <div class="grid-4 offset-1">
 	                <h1 class="text-taller no-space-bottom text-center"><i class="icon-logo"></i> Kraken</h1>
 	                <p class="text-tall text-muted text-center">A lightweight, mobile-first boilerplate for front-end web developers.</p>
-	        
-            	        <p>Kraken includes just the essentials:</p>
-                    <ul>
-                        <li>A CSS reset to ensure cross-browser compatibility.</li>
-                        <li>A responsive, mobile-first grid.</li>
-                        <li>A well-designed, fluid typographic scale.</li>
-                        <li>CSS3 buttons.</li>
-                        <li>Basic form styling.</li>
-                        <li>Separate add-ons for additional functionality.</li>
-                    </ul>
         	        </div>
 	        </div>
 
 	        <p class="text-center"><a class="btn btn-color btn-large" href="https://github.com/cferdinandi/kraken"><i class="icon-github"></i> Download on GitHub</a></p>
 
-	        <p class="text-center"><span class="text-small text-muted">Or keep reading to learn more...</span></p>
+	        <p class="text-center"><a href="#about">Or learn more &#9660;</a></p>
 
 	        <hr>
 
 
-	        <h1 class="text-center">Getting Started</h1>
+	        <h1 class="text-center no-space-bottom" id="about">Just the Essentials</h1>
+	        <p class="text-muted text-center">Designed to be lightweight and style agnostic, Kraken includes just the essentials.</p>
+
+            <div class="row text-center">
+                <div class="grid-2">
+                    <i class="icon-reset text-taller"></i>
+                    <h3 class="no-space">CSS Reset</h3>
+                    <p class="text-muted">Ensure cross-browser compatibility.</p>
+                </div>
+                <div class="grid-2">
+                    <i class="icon-grid text-taller"></i>
+                    <h3 class="no-space">Responsive Grid</h3>
+                    <p class="text-muted">A responsive, mobile-first 6-column grid.</p>
+                </div>
+                <div class="grid-2">
+                    <i class="icon-typography text-taller"></i>
+                    <h3 class="no-space">Typography</h3>
+                    <p class="text-muted">A well-designed, fluid typographic scale.</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="grid-2">
+                    <i class="icon-buttons text-taller"></i>
+                    <h3 class="no-space">Buttons</h3>
+                    <p class="text-muted">Easily style links and more with CSS3 classes.</p>
+                </div>
+                <div class="grid-2">
+                    <i class="icon-forms text-taller"></i>
+                    <h3 class="no-space">Forms</h3>
+                    <p class="text-muted">Basic styling for common form elements.</p>
+                </div>
+                <div class="grid-2">
+                    <i class="icon-addons text-taller"></i>
+                    <h3 class="no-space">Add-Ons</h3>
+                    <p class="text-muted">Add functionality with optional add-ons.</p>
+                </div>
+            </div>
+
+	        <p class="text-center"><a href="#get-started">Start using Kraken &#9660;</a></p>
+
+	        <hr>
+
+
+	        <h1 class="text-center" id="get-started">Getting Started</h1>
 
             <p>Learn how to use Kraken.</p>
 
@@ -61,16 +108,18 @@
                 </div>
             </ol>
 
+	        <p class="text-center"><a href="#examples">See examples &#9660;</a></p>
+
             <hr>
 
 
-            <h1 class="text-center">Built with Kraken</h1>
+            <h1 class="text-center" id="examples">Built with Kraken</h1>
 
             <div class="row text-center">
                 <div class="grid-2">
                     <p>
                         <a href="http://www.pawsnewengland.com/">
-                            <img src="img/paws.png" alt="Screenshot of the PAWS New England website"><br>
+                            <img src="img/paws.png" height="119" width="212" alt="Screenshot of the PAWS New England website"><br>
                             PAWS New England
                         </a>
                     </p>
@@ -78,7 +127,7 @@
                 <div class="grid-2">
                     <p>
                         <a href="http://gomakethings.com">
-                            <img src="img/gmt.png" alt="Screenshot of GoMakeThings.com"><br>
+                            <img src="img/gmt.png" height="119" width="212" alt="Screenshot of GoMakeThings.com"><br>
                             Go Make Things
                         </a>
                     </p>
@@ -86,7 +135,7 @@
                 <div class="grid-2">
                     <p>
                         <a href="http://barryzimmerman.co.uk/">
-                            <img src="img/barryz.png" alt="Screenshot of BarryZimmerman.co.uk"><br>
+                            <img src="img/barryz.png" height="119" width="212" alt="Screenshot of BarryZimmerman.co.uk"><br>
                             Barry Zimmerman
                         </a>
                     </p>
@@ -94,7 +143,6 @@
             </div>
 
             <p class="text-center">Built a site with Kraken? <a href="mailto:hello@gomakethings.com?subject=Built%20with%20Kraken">Let me know!</a><p>
-
 
         </article>
 	</section>
