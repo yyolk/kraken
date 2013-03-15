@@ -82,129 +82,8 @@
                 </div>
             </div>
 
-
-            <h2 class="text-center">Lists</h2>
-
-            <p>Kraken includes styling for order, unordered, and unstyled lists.</p>
-
-            <div class="row">
-                <div class="grid-2">
-                    <strong>Ordered</strong>
-                    <ol>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ol>
-                </div>
-                <div class="grid-2">
-                    <strong>Unordered</strong>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <div class="grid-2">
-                    <strong>Unstyled</strong>
-                    <ul class="list-unstyled">
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <p><strong>Note:</strong> For semantic reasons, <code>.list-unstyled</code> should only be applied to unordered lists.</p>
-
-            <pre>Ordered
-&lt;ol&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ol&gt;
-
-Unordered
-&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;
-
-Unstyled
-&lt;ul class="list-unstyled"&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ul&gt;</pre>
-
-
-            <h2 class="text-center">Headings</h2>
-
-            <p>Kraken includes styling for <code>h1</code> through <code>h6</code> headings.</p>
-
-            <h1>h1. Heading 1</h1>
-            <h2>h2. Heading 2</h2>
-            <h3>h3. Heading 3</h3>
-            <h4>h4. Heading 4</h4>
-            <h5>h5. Heading 5</h5>
-            <h6>h6. Heading 6</h6>
-
-            <pre>&lt;h1&gt;h1. Heading 1&lt;/h1&gt;
-&lt;h2&gt;h2. Heading 2&lt;/h2&gt;
-&lt;h3&gt;h3. Heading 3&lt;/h3&gt;
-&lt;h4&gt;h4. Heading 4&lt;/h4&gt;
-&lt;h5&gt;h5. Heading 5&lt;/h5&gt;
-&lt;h6&gt;h6. Heading 6&lt;/h6&gt;</pre>
-
-            <h3 class="text-center">Semantic Heading Classes</h3>
-
-            <p>All heading values can also be applied as classes. For example, if a heading should be an <code>h1</code> element semantically, but you would like it to be styled as an <code>h4</code> element, you can apply <code>class="h4"</code> to the <code>h1</code> element.</p>
-
-            <h1 class="h4">This is an h1 heading that's styled as an h4 heading</h1>
-
-            <pre>&lt;h1 class="h4"&gt;This is an h1 heading that's styled as an h4 heading&lt;/h1&gt;</pre>
-
-
-            <h2 class="text-center">Quotes & Citations</h2>
-
-            <blockquote>Once someone said something so important, it was deemed worthy of repeating here in the form of a blockquote. This is that blockquote.</blockquote>
-
-            <p>You can also include superscripts<sup>1</sup> and subscripts<sub>xyz</sub>.</p>
-
-            <pre>&lt;blockquote&gt;Once someone said something so important, it was deemed worthy of repeating here in the form of a blockquote. This is that blockquote.&lt;/blockquote&gt;
-
-You can also include superscripts&lt;sup&gt;1&lt;/sup&gt; and subscripts&lt;sub&gt;xyz&lt;/sub&gt;.</pre>
-
-
-	        <h2 class="text-center">Code</h2>
-
-	        <p>Here's some code that's within a sentence. The <code>.js</code> file is very important.</p>
-
-            <p>Here's some preformatted text:</p>
-            
-	        <pre>.js {
-    color: #272727;
-    background: #ffffff;
-}</pre>
-
-            <pre>&lt;p&gt;Here's some code that's within a sentence. The &lt;code&gt;.js&lt;/code&gt; file is very important.&lt;/p&gt;
-
-&lt;p&gt;Here's some preformatted text:&lt;/p&gt;
-
-&lt;pre&gt;.js {
-    color: #272727;
-    background: #ffffff;
-}&lt;/pre&gt;</pre>
-
-            <p><strong>Note:</strong> You'll need to escape brackets contained in code by typing &amp;lt; for <code>&lt;</code> and &amp;gt; for <code>&gt;</code>.
-
-
-	        <h2 class="text-center">Lines</h2>
-
-	        <p>Add lines to your HTML using the <code>&lt;hr&gt;</code> element.</p>
-
-
             <hr>
+
 
 	        <h1 class="text-center">Learn More</h1>
 
@@ -213,10 +92,15 @@ You can also include superscripts&lt;sup&gt;1&lt;/sup&gt; and subscripts&lt;sub&
                     <div class="grid-3">
                         <li><a href="grid.html">The Grid</a></li>
                         <li><span class="text-muted">Typography</span></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="quotes.html">Quotes & Citations</a></li>
                         <li><a href="buttons.html">Buttons</a></li>
-                        <li><a href="forms.html">Forms</a></li>
                     </div>
                     <div class="grid-3">
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="code.html">Code</a></li>
+                        <li><a href="lines.html">Lines</a></li>
                         <li><a href="details.html">Alignment, Spacing & Visibility</a></li>
                         <li><a href="addons.html">Add-Ons</a></li>
                         <li><a href="browsers.html">Browser Support</a></li>

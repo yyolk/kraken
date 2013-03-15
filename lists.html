@@ -34,33 +34,59 @@
             <p class="text-center"><a href="index.html">&larr; Kraken Home</a></p>
 
 
-            <h1 class="text-center">Browser Support</h1>
+	        <h1 class="text-center">Lists</h1>
 
-            <p>Kraken works on all major browsers.</p>
+            <p>Kraken includes styling for ordered, unordered, and unstyled lists.</p>
 
-            <p>Because IE 8 and lower do not recognize media queries, they will receive the single-column mobile layout instead of the fluid grid.</p>
+            <div class="row">
+                <div class="grid-2">
+                    <strong>Ordered</strong>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+                <div class="grid-2">
+                    <strong>Unordered</strong>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <div class="grid-2">
+                    <strong>Unstyled</strong>
+                    <ul class="list-unstyled">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+            </div>
 
-            <p>Also, rounded corners, gradients and drop-shadows on things like buttons and forms aren't recognized by IE 8 and lower and some mobile browsers (like Opera Mini). Forms and buttons still work in those browsers - they just look a bit simpler.</p>
-            
+            <p><strong>Note:</strong> For semantic reasons, <code>.list-unstyled</code> should only be applied to unordered lists.</p>
 
-            <h2 class="text-center">Viewport Sizing</h2>
+            <pre>Ordered
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
 
-            <p>Don't forget to include viewport sizing in the <code>&lt;head&gt;</code> for mobile devices.</p>
+Unordered
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
 
-            <pre>&lt;head&gt;
-    &lt;meta name="viewport" content="width=device-width"&gt;
-    ...
-&lt;/head&gt;</pre>
-
-
-            <h2 class="text-center">HTML5 Shim</h2>
-
-            <p>If you plan on using the new HTML5 semantic elements, you should also include the <a href="http://diveintohtml5.info/semantics.html">HTML5 Shim</a> in the <code>&lt;head&gt;</code> for older browser support.</p>
-
-            <pre>&lt;!-- HTML5 Shim for IE 6-8 --&gt;
-&lt;!--[if lt IE 9]&gt;
-    &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;</pre>
+Unstyled
+&lt;ul class="list-unstyled"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
 
             <hr>
 
@@ -72,7 +98,7 @@
                     <div class="grid-3">
                         <li><a href="grid.html">The Grid</a></li>
                         <li><a href="typography.html">Typography</a></li>
-                        <li><a href="lists.html">Lists</a></li>
+                        <li><span class="text-muted">Lists</span></li>
                         <li><a href="headings.html">Headings</a></li>
                         <li><a href="quotes.html">Quotes & Citations</a></li>
                         <li><a href="buttons.html">Buttons</a></li>
@@ -83,7 +109,7 @@
                         <li><a href="lines.html">Lines</a></li>
                         <li><a href="details.html">Alignment, Spacing & Visibility</a></li>
                         <li><a href="addons.html">Add-Ons</a></li>
-                        <li><span class="text-muted">Browser Support</span></li>
+                        <li><a href="browsers.html">Browser Support</a></li>
                     </div>
                 </div>
             </ol>

@@ -34,33 +34,27 @@
             <p class="text-center"><a href="index.html">&larr; Kraken Home</a></p>
 
 
-            <h1 class="text-center">Browser Support</h1>
+	        <h1 class="text-center">Code</h1>
 
-            <p>Kraken works on all major browsers.</p>
+	        <p>Here's some code that's within a sentence. The <code>.js</code> file is very important.</p>
 
-            <p>Because IE 8 and lower do not recognize media queries, they will receive the single-column mobile layout instead of the fluid grid.</p>
-
-            <p>Also, rounded corners, gradients and drop-shadows on things like buttons and forms aren't recognized by IE 8 and lower and some mobile browsers (like Opera Mini). Forms and buttons still work in those browsers - they just look a bit simpler.</p>
+            <p>Here's some preformatted text:</p>
             
+	        <pre>.js {
+    color: #272727;
+    background: #ffffff;
+}</pre>
 
-            <h2 class="text-center">Viewport Sizing</h2>
+            <pre>&lt;p&gt;Here's some code that's within a sentence. The &lt;code&gt;.js&lt;/code&gt; file is very important.&lt;/p&gt;
 
-            <p>Don't forget to include viewport sizing in the <code>&lt;head&gt;</code> for mobile devices.</p>
+&lt;p&gt;Here's some preformatted text:&lt;/p&gt;
 
-            <pre>&lt;head&gt;
-    &lt;meta name="viewport" content="width=device-width"&gt;
-    ...
-&lt;/head&gt;</pre>
+&lt;pre&gt;.js {
+    color: #272727;
+    background: #ffffff;
+}&lt;/pre&gt;</pre>
 
-
-            <h2 class="text-center">HTML5 Shim</h2>
-
-            <p>If you plan on using the new HTML5 semantic elements, you should also include the <a href="http://diveintohtml5.info/semantics.html">HTML5 Shim</a> in the <code>&lt;head&gt;</code> for older browser support.</p>
-
-            <pre>&lt;!-- HTML5 Shim for IE 6-8 --&gt;
-&lt;!--[if lt IE 9]&gt;
-    &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;</pre>
+            <p><strong>Note:</strong> You'll need to escape brackets contained in code by typing &amp;lt; for <code>&lt;</code> and &amp;gt; for <code>&gt;</code>.
 
             <hr>
 
@@ -79,11 +73,11 @@
                     </div>
                     <div class="grid-3">
                         <li><a href="forms.html">Forms</a></li>
-                        <li><a href="code.html">Code</a></li>
+                        <li><span class="text-muted">Code</span></li>
                         <li><a href="lines.html">Lines</a></li>
                         <li><a href="details.html">Alignment, Spacing & Visibility</a></li>
                         <li><a href="addons.html">Add-Ons</a></li>
-                        <li><span class="text-muted">Browser Support</span></li>
+                        <li><a href="browsers.html">Browser Support</a></li>
                     </div>
                 </div>
             </ol>
