@@ -410,9 +410,14 @@ sub {
     bottom: -0.25em; 
 }
 
-::selection, ::-moz-selection { 
+::selection { 
     color: #ffffff; 
-    background: #3892d0; 
+    background: #0088cc; 
+}
+
+::-moz-selection { 
+    color: #ffffff; 
+    background: #0088cc; 
 }
 
 blockquote { 
