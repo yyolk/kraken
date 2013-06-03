@@ -44,9 +44,7 @@
             <p>Here's a basic HTML template page to get you started.</p>
 
             <pre>&lt;!DOCTYPE html&gt;
-&lt;!-- Conditional class for older versions of IE --&gt;
-&lt;!--[if lt IE 9 & !IEMobile]&gt;&lt;html class="ie" lang="en"&gt;&lt;![endif]--&gt;
-&lt;!--[if gt IE 8 | IEMobile]&gt;&lt;!--&gt;&lt;html lang="en"&gt;&lt;!--&lt;![endif]--&gt;
+&lt;html lang="en"&gt;
 
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
@@ -89,6 +87,15 @@
   &lt;body&gt;
 
 
+    &lt;!-- Old Browser Warning --&gt;
+    &lt;!-- If you're supporting IE 6-7, remove this --&gt;
+    &lt;!--[if lt IE 8]&gt;
+        &lt;section class="container"&gt;
+            Did you know that your web browser is a bit old? Some of the content on this site might not work right as a result. &lt;a href="http://whatbrowser.org"&gt;Upgrade your browser&lt;/a&gt; for a faster, better, and safer web experience.
+        &lt;/section&gt;
+    &lt;![endif]--&gt;
+
+
     &lt;section class="container"&gt;
 
       &lt;h1&gt;Hello World!&lt;/h1&gt;
@@ -101,8 +108,6 @@
 
     &lt;!-- Javascript --&gt;
     &lt;!-- In the footer for better performance --&gt;
-    &lt;!-- Why no http? http://paulirish.com/2010/the-protocol-relative-url/ --&gt;
-    &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"&gt;&lt;/script&gt;
     &lt;script src="js/kraken.js"&gt;&lt;/script&gt;
 
     &lt;!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --&gt;
@@ -118,11 +123,11 @@
 &lt;/html&gt;</pre>
 
 
-            <h2>The Template Explained</h2>
+            <h2 class="text-center">The Template Explained</h2>
 
-            <h3>Conditional Classes for IE</h3>
-            
-            <p>Because IE 8 and older don't recognize media queries, we add an <code>.ie</code> class to the <code>&lt;html&gt;</code> element on non-mobile IE browsers. You can use this class for IE-specific styling in your CSS. <a href="http://gomakethings.com/mobile-first-and-internet-explorer/">Learn more.</a></p>
+            <h3>HTML Language</h3>
+
+            <p>The language attribute (<code>lang</code>) helps screen-readers and translation software read your site (<a href="http://www.youtube.com/watch?v=Rx7lE8j5MNA">learn more</a>). Be default, it's set to English. Change it as needed for <a href="http://www.w3.org/International/questions/qa-choosing-language-tags">your local language</a>.</p>
 
             <h3>Chrome Frame</h3>
             
@@ -138,17 +143,15 @@
 
             <h3>Icons</h3>
 
-            <p>The site favicon and touch icons for when people bookmark your site or app on the homescreen of their mobile device. This now includes support for Windows phones, too.</p>
+            <p>The site favicon and touch icons for when people bookmark your site or app on the homescreen of their mobile device. This now includes support for Windows phones, too. (Icons aren't included with Kraken. Add them to <code>img</code> folder.)</p>
+
+            <h3>Old Browser Warning</h3>
+
+            <p>A friendly message encouraging visitors on older versions of IE to upgrade their browser. They can still access the site content. It will just look a bit funny.</p>
 
             <h3>JavaScript in the Footer</h3>
 
             <p>For faster loading and better site performance, JavaScript files are included in the footer, not the header.</p>
-
-            <h3>No HTTP on jQuery</h3>
-
-            <p>jQuery is loaded from the Google CDN. By leaving off the HTTP, we ensure that it will work properly on both standard and secure connections. <a href="http://paulirish.com/2010/the-protocol-relative-url/">Technique by Paul Irish.</a></p>
-
-            <p>Kraken doesn't include any jQuery scripts, but <a href="file://localhost/Users/cferdinandi/Sites/kraken/addons.html">some of the add-ons</a> do. Remove it if you don't need it.</p>
 
             <h3>Google Analytics</h3>
 
