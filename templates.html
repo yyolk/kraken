@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Template | The Kraken Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="kraken.css" type="text/css" />
+
+    <!-- HTML5 Shim for IE 6-8 -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144.png">
+
+    <!-- MS Homescreen Icons -->
+    <meta name="msapplication-TileColor" content="#0088cc">
+    <meta name="msapplication-TileImage" content="img/ms-touch-icon.png">
+</head>
+
+<body>
+	<section class="space-bottom bg-gray">
+	    <article class="container">
+
+            <h1 class="text-taller no-space text-center"><i class="icon-logo"></i> Kraken</h1>
+            <p class="text-center space-bottom-small"><a href="index.html">&larr; Kraken Home</a></p>
+
+        </article>
+    </section>
+
+	<section class="space-bottom">
+	    <article class="container">
+
+            <h1 class="text-center">HTML Template</h1>
+
+            <p>Here's a basic HTML template page to get you started.</p>
+
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;!-- Conditional class for older versions of IE --&gt;
+&lt;!--[if lt IE 9 & !IEMobile]&gt;&lt;html class="ie" lang="en"&gt;&lt;![endif]--&gt;
+&lt;!--[if gt IE 8 | IEMobile]&gt;&lt;!--&gt;&lt;html lang="en"&gt;&lt;!--&lt;![endif]--&gt;
+
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;!-- Force latest available IE rendering engine and Chrome Frame (if installed) --&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
+    
+    &lt;title&gt;&lt;/title&gt;
+    &lt;meta name="description" content=""&gt;
+
+    
+    &lt;!-- Mobile Screen Resizing --&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    
+    &lt;!-- stylesheet --&gt;
+    &lt;link rel="stylesheet" href="css/kraken.css" type="text/css"&gt;
+
+    &lt;!-- HTML5 Shim for IE 6-8 --&gt;
+    &lt;!--[if lt IE 9]&gt;
+      &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+
+   
+    &lt;!-- Favicon --&gt;
+    &lt;link rel="shortcut icon" type="image/ico" href="img/favicon.ico"&gt;
+
+    &lt;!-- Apple Touch Icons --&gt;
+    &lt;link rel="apple-touch-icon" href="../img/apple-touch-icon.png"&gt;
+    &lt;link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png"&gt;
+    &lt;link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png"&gt;
+    &lt;link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144.png"&gt;
+
+    &lt;!-- MS Homescreen Icons --&gt;
+    &lt;meta name="msapplication-TileColor" content="#0088cc"&gt;
+    &lt;meta name="msapplication-TileImage" content="img/ms-touch-icon.png"&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+
+    &lt;section class="container"&gt;
+
+      &lt;h1&gt;Hello World!&lt;/h1&gt;
+
+      &lt;p&gt;Add your content here.&lt;/p&gt;
+
+    &lt;/section&gt;
+
+    
+
+    &lt;!-- Javascript --&gt;
+    &lt;!-- In the footer for better performance --&gt;
+    &lt;!-- Why no http? http://paulirish.com/2010/the-protocol-relative-url/ --&gt;
+    &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/kraken.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --&gt;
+    &lt;!-- (Via HTML5 Boilerplate: http://html5boilerplate.com/) --&gt;
+    &lt;script&gt;
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    &lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+
+            <h2>The Template Explained</h2>
+
+            <h3>Conditional Classes for IE</h3>
+            
+            <p>Because IE 8 and older don't recognize media queries, we add an <code>.ie</code> class to the <code>&lt;html&gt;</code> element on non-mobile IE browsers. You can use this class for IE-specific styling in your CSS. <a href="http://gomakethings.com/mobile-first-and-internet-explorer/">Learn more.</a></p>
+
+            <h3>Chrome Frame</h3>
+            
+            <p>Sometimes newer versions of IE will use not-so-new versions of their rendering engine. We tell IE to use the latest available version of it's rendering engine, or Chrome Frame if it's installed.</p>
+
+            <h3>Mobile Screen Resizing</h3>
+
+            <p>Modern mobile browsers often "fake" a desktop sized viewport so that websites that aren't mobile-optimized aren't weirdly zoomed in when you load them. The viewport tag tells browsers that the viewport should be the size of the screen (because our site <em>is</em> mobile-optimize).</p>
+
+            <h3>HTML5 Shim</h3>
+
+            <p>Internet Explorer 8 and lower do not recognize the new HTML5 semantic elements (like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and so on). The HTML5 Shim is a little JavaScript snippet that we load conditionally on older IE browsers to ensure those elements render correctly.</p>
+
+            <h3>Icons</h3>
+
+            <p>The site favicon and touch icons for when people bookmark your site or app on the homescreen of their mobile device. This now includes support for Windows phones, too.</p>
+
+            <h3>JavaScript in the Footer</h3>
+
+            <p>For faster loading and better site performance, JavaScript files are included in the footer, not the header.</p>
+
+            <h3>No HTTP on jQuery</h3>
+
+            <p>jQuery is loaded from the Google CDN. By leaving off the HTTP, we ensure that it will work properly on both standard and secure connections. <a href="http://paulirish.com/2010/the-protocol-relative-url/">Technique by Paul Irish.</a></p>
+
+            <p>Kraken doesn't include any jQuery scripts, but <a href="file://localhost/Users/cferdinandi/Sites/kraken/addons.html">some of the add-ons</a> do. Remove it if you don't need it.</p>
+
+            <h3>Google Analytics</h3>
+
+            <p>An optimized version of Google Analytics is preloaded for you. Just add your site's ID (or replace the code altogether if you're using another analytics platform). <a href="http://html5boilerplate.com/">Adapted from HTML5 Boilerplate.</a></p>
+
+            <hr>
+
+
+	        <h1 class="text-center">Learn More</h1>
+
+            <ol>
+                <div class="row">
+                    <div class="grid-3">
+                        <li><a href="grid.html">The Grid</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="quotes.html">Quotes & Citations</a></li>
+                        <li><a href="buttons.html">Buttons</a></li>
+                    </div>
+                    <div class="grid-3">
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="code.html">Code</a></li>
+                        <li><a href="lines.html">Lines</a></li>
+                        <li><a href="details.html">Alignment, Spacing & Visibility</a></li>
+                        <li><a href="addons.html">Add-Ons</a></li>
+                        <li><a href="browsers.html">Browser Support</a></li>
+                    </div>
+                </div>
+            </ol>
+
+
+	        <h2 class="text-center">Advanced Tutorials</h2>
+
+            <ul>
+                <div class="row">
+                    <div class="grid-3">
+                        <li><a href="http://gomakethings.com/working-with-relative-sizing/">Working with Relative Sizing</a></li>
+                    </div>
+                    <div class="grid-3">
+                        <li><a href="http://gomakethings.com/mobile-first-and-internet-explorer/">Mobile First & IE</a></li>
+                    </div>
+                </div>
+            </ul>
+
+        </article>
+	</section>
+
+	<footer class="bg-gray">
+        <article class="container">
+
+            <p class="text-small text-muted text-center">Built by <a href="http://gomakethings.com">Chris Ferdinandi</a>. Licensed under <a href="http://www.wtfpl.net/">WTFPL</a>.</p>
+
+        </article>
+	</footer>
+
+
+    <!-- Javascript -->
+    <script type='text/javascript' src='js/kraken.js'></script>
+
+</body>
+</html>
