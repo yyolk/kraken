@@ -45,23 +45,37 @@
 	        <p>Some basic standards to ensure that Kraken add-ons and forks share a common language and approach.</p>
 
 
-            <h3 class="text-center">Table of Contents</h3>
+            <h2 class="text-center">Table of Contents</h2>
 
             <ul>
                 <li><a href="#golden-rule">The Golden Rule</a></li>
-                <li><a href="#html-syntax">HTML Syntax</a></li>
-                <li><a href="#css-syntax">CSS Syntax</a></li>
+                <li>
+                    <a href="#html">HTML</a>
                     <ul>
+                        <li><a href="#html-syntax">HTML Syntax</a></li>
+                        <li><a href="#html-attribute-order">Attribute Order</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#css">CSS</a>
+                    <ul>
+                        <li><a href="#css-syntax">CSS Syntax</a></li>
+                        <li><a href="#css-declaration-order">Declaration Order</a></li>
                         <li><a href="#css-formatting-exceptions">Formatting Exceptions</a></li>
                         <li><a href="#css-class-names">Class Names</a></li>
                         <li><a href="#css-selectors">Selectors</a></li>
                     </ul>
-                <li><a href="#js-syntax">JavaScript Syntax</a></li>
+                </li>
+                <li>
+                    <a href="#js">JavaScript</a>
                     <ul>
+                        <li><a href="#js-syntax">JavaScript Syntax</a></li>
                         <li><a href="#js-progressive-enhancement">Progressive Enhancement</a></li>
                     </ul>
+                </li>
                 <li><a href="#organize-document">Organization & Documentation</a></li>
                     <ul>
+                        <li><a href="od-guidelines">Guidelines</a></li>
                         <li><a href="#od-section-headings">Section Headings</a></li>
                         <li><a href="#od-inline-documentation">Inline Documentation</a></li>
                     </ul>
@@ -71,11 +85,13 @@
             <hr>
 
 
-	        <h2 class="text-center" id="golden-rule">The Golden Rule</h2>
+	        <h1 class="text-center" id="golden-rule">The Golden Rule</h1>
 
 	        <p>Write code for humans. That means clear section headers, ample white space, and lots of inline documentation.</p>
 
             <hr>
+
+            <h1 class="text-center" id="html">HTML</h1>
 
 
 	        <h2 class="text-center" id="html-syntax">HTML Syntax</h2>
@@ -114,7 +130,23 @@
     &lt;/body&gt;
 &lt;/html&gt;</pre>
 
+
+	        <h2 class="text-center" id="html-attribute-order">Attribute Order</h2>
+
+            <p class="space-bottom-small">HTML attributes should be written in this order for easier reading of code:</p>
+            <ul>
+                <li>class</li>
+                <li>id</li>
+                <li>data-*</li>
+                <li>for/type/href</li>
+            </ul>
+
+            <p class="space-bottom-small"><strong>Example:</strong></p>
+            <pre>&lt;a class="" id="" data-target="" href=""&gt;Example link&lt;/a&gt;</pre>
+
             <hr>
+
+            <h1 class="text-center" id="css">CSS</h1>
 
 	        
 	        <h2 class="text-center" id="css-syntax">CSS Syntax</h2>
@@ -160,7 +192,44 @@ padding:17px}</pre>
 }</pre>
 
 
-	        <h3 class="text-center" id="css-formatting-exceptions">Formatting Exceptions</h3>
+	        <h2 class="text-center" id="css-declaration-order">Declaration Order</h2>
+
+	        <p>Related declarations should be grouped together, placing box-model and positioning properties closest to the top, followed by typographic properties, margin and padding, and visual properties.</p>
+
+	        <pre>.declaration-order {
+    /* Box-model */
+    display: block;
+    width: 100%;
+    max-height: 20em;
+    float: right;
+
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    /* Typography */
+    font-size: .875em;
+    line-height: 1.5;
+    color: #272727;
+    text-align: center;
+
+    /* Margin & Padding */
+    margin-bottom: 1em;
+    padding: 2em;
+
+    /* Visual */
+    background-color: #e5e5e5;
+    border: 1px solid #808080;
+    border-radius: .25em;
+
+    /* Misc */
+    opacity: .7;
+}</pre>
+
+
+	        <h2 class="text-center" id="css-formatting-exceptions">Formatting Exceptions</h2>
 
             <ul>
                 <li>When using vendor prefixed properties, indent each property such that the value lines up vertically for easy multi-line editing.</li>
@@ -180,12 +249,12 @@ padding:17px}</pre>
 .icon-github:before { content: "\e001"; }
 .icon-docs:before   { content: "\e002"; }
 
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h2, h4, h5, h6 { 
     line-height: 1.2; 
     font-weight: normal;
 }</pre>
 	        
-	        <h3 class="text-center" id="css-class-names">Class Names</h3>
+	        <h2 class="text-center" id="css-class-names">Class Names</h2>
 
 	        <ul>
                 <li>Keep classes lowercase and use dashes (not underscores or camelCase).</li>
@@ -208,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-large { ... }</pre>
 
 	        
-	        <h3 class="text-center" id="css-selectors">Selectors</h3>
+	        <h2 class="text-center" id="css-selectors">Selectors</h2>
 
             <ul>
                 <li>Use classes, not IDs or generic element tags.</li>
@@ -227,6 +296,8 @@ h1, h2, h3, h4, h5, h6 {
 .icon-bar { ... }</pre>
 
             <hr>
+
+            <h1 class="text-center" id="js">JavaScript</h1>
 
 	        
 	        <h2 class="text-center" id="js-syntax">JavaScript Syntax</h2>
@@ -256,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
     });
 });</pre>
 
-            <h3 class="text-center" id="js-progressive-enhancement">Progressive Enhancement</h3>
+            <h2 class="text-center" id="js-progressive-enhancement">Progressive Enhancement</h2>
 
             <p>JavaScript should always be a progressive enhancement. Check for JS support before hiding or altering content.</p>
 
@@ -275,7 +346,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-	        <h2 class="text-center" id="organize-document">Organization & Documentation</h2>
+	        <h1 class="text-center" id="organize-document">Organization & Documentation</h1>
+
+	        <h2 class="text-center" id="od-guidelines">Guidelines</h2>
 
 	        <ul>
 	            <li>Combine like file-types into a single file (ex. all CSS in one file, all JS in another).</li>
@@ -283,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 	            <li>Add inline documentation to everything.</li>
 	        </ul>
 
-	        <h3 class="text-center" id="od-section-headings">Headings & Sections</h3>
+	        <h2 class="text-center" id="od-section-headings">Headings & Sections</h2>
 
 	        <p>File headings and section titles should be clear and distinct. Include five line breaks of white space between sections. Use the following format for files headings and section titles.</p>
 
@@ -306,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
  * ============================================================= */</pre>
 
         
-	        <h3 class="text-center" id="od-inline-documentation">Inline Documentation</h3>
+	        <h2 class="text-center" id="od-inline-documentation">Inline Documentation</h2>
 
 	        <p>Inline documentation should describe both what a snippet of <em>is</em> and what it <em>does</em>.</p>
 
@@ -321,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
             <hr>
 
 	        
-	        <h2 class="text-center" id="thanks">Thanks</h2>
+	        <h1 class="text-center" id="thanks">Thanks</h1>
 
             <p>Thanks for helping make Kraken better. This code guide was inspired by <a href="https://github.com/mdo/code-guide">Mark Otto</a>.</p>
 
