@@ -47,13 +47,14 @@ $btn-hover-border: #595959;
 // additional color settings:
 $body-bg: #ffffff;
 
+// form settings
+$input-focus-border: rgba(82, 168, 236, 0.8);
+$input-focus-shadow: rgba(82, 168, 236, 0.6);
+$input-border-radius: .176470588em;
+
 // Grid Settings
 $containerMaxWidth: 80em;
 $containerWidth: 88%;
-$containerMargin: auto;
-$rowMargin: -1.515151515152%;
-$gridWidth: 96.969696969697%;
-$gridMargin: 1.515151515152%;
 
 // settings for mixins
 $base-font-size: 17px;

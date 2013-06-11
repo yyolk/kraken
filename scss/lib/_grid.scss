@@ -17,14 +17,14 @@
 @media (min-width: 30em) {
 
     .row {
-        margin-left: $rowMargin;
-        margin-right: $rowMargin;
+        margin-left: -1.515151515152%;
+        margin-right: -1.515151515152%;
     }
 
     [class^="grid-"],
     [class*=" grid-"] {
         float: left;
-        width: $gridWidth;
+        width: 96.969696969697%;
         margin-left: 1.515151515152%;
         margin-right: 1.515151515152%;
     }
