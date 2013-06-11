@@ -3,8 +3,8 @@
 
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 106.25%;
-    line-height: 1.470588235;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
     color: $dark-gray;
     background: $body-bg;
 }
@@ -13,7 +13,7 @@ p {
     margin-bottom: 1.529411765em;
 }
 
-@media (min-width: 40em) {
+@media (min-width: #{$lap}) {
     body {
         line-height: 1.588235294;
     }
@@ -33,7 +33,7 @@ p {
     line-height: 1.4;
 }
 
-@media (min-width: 40em) {
+@media (min-width: #{$lap}) {
     .text-tall {
         font-size: 1.352941176em;
     }
@@ -52,12 +52,12 @@ p {
  *  Hyperlink styling */
 
 a {
-    color: $blue;
+    color: $primary;
     text-decoration: none;
 }
 
 a:hover {
-    color: $dark-blue;
+    color: $secondary;
     text-decoration: underline;
 }
 
@@ -140,7 +140,7 @@ h4, .h4 {
     text-transform: uppercase;
 }
 
-@media (min-width: 40em) {
+@media (min-width: #{$lap}) {
     h1, .h1 {
         font-size: 1.764705882em;
     }
@@ -153,7 +153,7 @@ h4, .h4 {
 hr {
     margin: 2em auto;
     border: 0;
-    border-top: .071428571em solid $lite-gray;
+    border-top: .071428571em solid $light-gray;
     border-bottom: .071428571em solid $white;
 }
 
@@ -188,18 +188,18 @@ sub {
 /*  Highlighting colors */
 ::selection {
     color: $white;
-    background: $blue;
+    background: $primary;
 }
 
 ::-moz-selection {
     color: $white;
-    background: $blue;
+    background: $primary;
 }
 
 /*  Blockquotes */
 blockquote {
-    border-left: .235294118em solid $lite-gray;
-    margin-bottom:1.529411765em;
+    border-left: .235294118em solid $light-gray;
+    margin-bottom: 1.529411765em;
     padding-left: 1.529411765em;
     padding-right: 1.529411765em;
 }

@@ -30,7 +30,13 @@
 */
 
 // Config for Kraken
-// COLORS
+
+// font-size:
+$body-font-size: 106.25%;  // approx. 17px note: if you change this you must adjust the $base-font-size;
+$body-line-height: 1.470588235;
+$base-font-size: 17px;     // for mixins that need a px value to function
+
+// colors
 $primary: #0088cc;      // blue
 $secondary: #005580;    // dark-blue
 $black: #272727;        // dark-grey
@@ -56,7 +62,11 @@ $input-border-radius: .176470588em;
 $containerMaxWidth: 80em;
 $containerWidth: 88%;
 
+// media queries
+$portable: 30em;
+$lap: 40em;
+$desk: 60em;
+
 // settings for mixins
-$base-font-size: 17px;
-$break-small: 320px;
-$break-large: 1024px;  // $break-medium is between small and large
+$break-small: $portable;
+$break-large: $desk;  // $break-medium is between small and large
