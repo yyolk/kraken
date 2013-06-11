@@ -1,4 +1,7 @@
-# Kraken
+# Kraken-Sass
+
+This is a SASS fork of Kraken it is very similar to the original with the added power of SASS.
+
 Kraken is a lightweight, mobile-first boilerplate for front-end web developers. It includes just the essentials:
 
 * A CSS reset to ensure cross-browser compatibility.
@@ -8,13 +11,33 @@ Kraken is a lightweight, mobile-first boilerplate for front-end web developers. 
 * Basic form styling.
 * Optional add-ons for more functionality.
 
+## Extras for Kraken-Sass
+
+* Mixins for the grid and more (have a look)
+* A Settings file where you can easily adjust any project variable
+* Modular setup of partials so that you can include just the modules you care to use.
+
 ## How It Works
-Getting started with Kraken is really easy. [View the online tutorial](http://cferdinandi.github.com/kraken/).
+Getting started with Kraken-Sass is really easy. [View the online tutorial](http://jwebcat.github.com/kraken-sass/).
 
 ## Get Involved
+Make sure you read the how-to from the CSS version of Kraken below.
+
+- create an issue
+- make a branch (e.g. "feature")
+- hack on it
+- submit a PR (from "feature" branch, NOT from "master")
+
 Kraken is an open-source project. [Learn how you can get involved.](http://cferdinandi.github.io/kraken/get-involved.html)
 
-## Changelog
+## Version Numbers
+Kraken-Sass follows the Major versions of Kraken and its own Minor version for features and bugfixes.
+
+## Changelog (Kraken-Sass)
+* v.2.1 (June, 11, 2013)
+  * Inception
+
+## Changelog (Kraken)
 * v2.1 (June 7, 2013)
   * Switched to MIT license.
 * v2.1 (June 2, 2013)
@@ -30,6 +53,11 @@ Kraken is an open-source project. [Learn how you can get involved.](http://cferd
   * Added print styling.
 * v1.0 (Mary 7, 2013)
   * Initial release.
+
+## TODO
+* adjust gh-pages for sass version of kraken
+* convert each of the add-ons to SASS and have them in a subdir
+* create sub-trees for each add-on
 
 ## License
 Kraken is free to use under the [MIT License](http://gomakethings.com/mit/).
