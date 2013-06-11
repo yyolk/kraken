@@ -31,10 +31,10 @@ Make sure you read the how-to from the CSS version of Kraken below.
 Kraken is an open-source project. [Learn how you can get involved.](http://cferdinandi.github.io/kraken/get-involved.html)
 
 ## Version Numbers
-Kraken-Sass follows the Major versions of Kraken and its own Minor version for features and bugfixes.
+Kraken-Sass follows the Major versions of Kraken and its own extra Minor version for features and bugfixes.
 
 ## Changelog (Kraken-Sass)
-* v.2.1 (June, 11, 2013)
+* v.2.1.1 (June, 11, 2013)
   * Inception
 
 ## Changelog (Kraken)

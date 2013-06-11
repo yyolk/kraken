@@ -14,7 +14,7 @@
 /*  Still mostly single-column.
  *  Grid-third, grid-half, and grid-img
  *  provide sub-gridding on smaller screens.  */
-@media (min-width: 30em) {
+@media (min-width: #{$portable}) {
 
     .row {
         margin-left: -1.515151515152%;
@@ -51,7 +51,7 @@
 
 
 /*  6-column grid  */
-@media (min-width: 40em) {
+@media (min-width: #{$lap}) {
 
     .grid-1 {
         width: 13.636363636364%;
@@ -110,7 +110,7 @@
 
 /*  Additional gridding for grid-img on bigger screens.
  *  Adjust as needed. */
-@media (min-width: 60em) {
+@media (min-width: #{$desk}) {
     .grid-img {
         width: 13.636363636364%;
     }
