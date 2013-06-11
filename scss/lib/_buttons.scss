@@ -1,7 +1,7 @@
 /*  BUTTONS */
 /*  Styling for CSS3 buttons */
 
-.btn {
+.btn, %btn {
     display: inline-block;
     font-size: .882352941em;
     padding: .4em .666666667em;
@@ -32,7 +32,7 @@ a .btn:hover {
     text-decoration: none;
 }
 
-.btn-blue {
+.btn-blue, %btn-blue {
     background-color: $primary;
     border-color: $primary;
 }
@@ -43,7 +43,7 @@ a .btn-blue:hover {
     border-color: $secondary;
 }
 
-.btn-large {
+.btn-large, %btn-large {
     padding: .588235294em .882352941em;
     font-size: 1em;
     line-height: normal;
@@ -68,7 +68,7 @@ input[type="button"].btn-block {
     margin-top: .333333333em;
 }
 
-button, .btn {
+button, .btn, %btn {
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
