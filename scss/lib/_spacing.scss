@@ -87,15 +87,3 @@
 .row:after {
     clear: both;
 }
-
-// extend for clearfix
-.cfix, %cfix {
-        &:before, &:after {
-            display: table;
-            content: "";
-            *zoom: 1;
-        }
-            &:after {
-                clear:both;
-            }
-}
