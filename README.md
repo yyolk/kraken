@@ -34,11 +34,13 @@ Kraken is an open-source project. [Learn how you can get involved.](http://cferd
 Kraken-Sass follows the Major versions of Kraken and its own extra Minor version for features and bugfixes.
 
 ## Changelog (Kraken-Sass)
+* v2.1.4 (June, 13, 2013)
+  * moved `%cfix` to _grid.scss and update `grid()` and `container()` mixins to @extend `%cfix`
 * v2.1.3 (June, 12, 2013)
   * Updated `row` and `container` mixins to use @extend
 * v2.1.2 (June, 12, 2013)
   * Moved `grid()` mixins to _grid.scss and changed it to use @extend with %placeholders
-* v.2.1.1 (June, 11, 2013)
+* v2.1.1 (June, 11, 2013)
   * Inception
 
 ## Changelog (Kraken)
