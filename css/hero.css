@@ -1,0 +1,72 @@
+/* ============================================================= */
+/* =============================================================
+    RESPONSIVE RESET
+    Replace with your own.
+ * ============================================================= */
+@-webkit-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@-moz-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@-ms-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@-o-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000318}}
+html {
+  overflow-y: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000320}}
+img, audio, video, canvas {
+  max-width: 100%; }
+
+/*  Sets Body Width */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000323}}
+.container {
+  max-width: 40em;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* =============================================================
+    HERO
+    Callout and background color styling.
+ * ============================================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000340}}
+.bg {
+  background-color: #f4f4f4;
+  padding-top: 1.52941em;
+  padding-bottom: 1.52941em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000347}}
+.bg-blue {
+  color: white;
+  background-color: #0088cc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000353}}
+.bg-condensed {
+  padding-top: 0.82353em;
+  padding-bottom: 0.82353em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000359}}
+.hero {
+  background-color: #f4f4f4;
+  margin-bottom: 1.52941em;
+  padding: 1.52941em;
+  border: 0.07143em solid #e5e5e5;
+  border-radius: 0.23529em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Owner\/Desktop\/sites\/lib\/kraken-sass\/addons\/css-components\/hero\/scss\/hero\.scss}line{font-family:\0000368}}
+.hero-condensed {
+  padding: 0.82353em; }
