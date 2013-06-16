@@ -52,7 +52,8 @@ html { overflow-y: auto; }
 img, audio, video, canvas { max-width: 100%; }
 
 /*  Sets Body Width */
-.container {
+.container,
+%container {
     max-width: $container-max-width;
     width: $container-width;
     margin-left: auto;
@@ -99,4 +100,61 @@ img, audio, video, canvas { max-width: 100%; }
 .hero-condensed,
 %hero-condensed {
     padding: $hero-condensed-padding;
+}
+
+
+
+// -----------------------------------------------
+// // ------ DEMO of using @extends for Hero -------
+// -----------------------------------------------
+
+hgroup {
+    @extend %container;
+    text-align: center;
+    margin-bottom: 3em;
+        h1 {
+            font-size: 3em;
+        }
+            p {
+                font-size: 1.2em;
+            }
+}
+
+.sass-hero-demo {
+    text-align: center;
+    @extend %container;
+        article > div {
+            &:nth-child(1) {
+                @extend %hero;
+            }
+                &:nth-child(2) {
+                    @extend %hero;
+                    @extend %hero-condensed;
+                }
+        }
+            h2 {
+                text-align: left;
+            }
+}
+
+.sass-bg-demo {
+    text-align: center;
+        > div {
+            &:nth-of-type(1) {
+                @extend %bg;
+            }
+                &:nth-of-type(2) {
+                    @extend %bg;
+                    @extend %bg-blue;
+                }
+                    &:nth-of-type(3) {
+                        @extend %bg;
+                        @extend %bg-condensed;
+                    }
+                        &:nth-of-type(4) {
+                            @extend %bg;
+                            @extend %bg-blue;
+                            @extend %bg-condensed;
+                        }
+        }
 }
