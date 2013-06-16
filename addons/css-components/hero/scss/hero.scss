@@ -1,5 +1,37 @@
-// ------ import config for hero ------
-@import "config";
+// -----------------------------------------------
+// // ------ Config for hero ------
+// -----------------------------------------------
+
+// -----------------------------------------------
+// // ------ colors -------
+// -----------------------------------------------
+
+$white: #ffffff;
+
+// -----------------------------------------------
+// // ------ DEMO container settings ------
+// -----------------------------------------------
+
+$container-width: 88%;
+$container-max-width: 40em;
+
+// -----------------------------------------------
+// // ------ hero styles -------
+// -----------------------------------------------
+
+$hero-bg-bg-color: #f4f4f4;
+$hero-padding-top: 1.529411765em;
+$hero-padding-bottom: 1.529411765em;
+$hero-bg-blue-color: $white;
+$hero-bg-blue-bg-color: #0088cc;
+$hero-bg-condensed-padding-top: .823529412em;
+$hero-bg-condensed-padding-bottom: .823529412em;
+$hero-bg-color: #f4f4f4;
+$hero-margin-bottom: 1.529411765em;
+$hero-padding: 1.529411765em;
+$hero-border: .071428571em solid #e5e5e5;
+$hero-border-radius: .235294118em;
+$hero-condensed-padding: .823529412em;
 
 /* ============================================================= */
 
