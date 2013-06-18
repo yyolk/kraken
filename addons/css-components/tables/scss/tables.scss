@@ -71,6 +71,14 @@ img, audio, video, canvas { max-width: 100%; }
     margin-right: auto;
 }
 
+h1 {
+    text-align: center;
+    font-size: 3em;
+    + p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
 
 
 
@@ -199,4 +207,16 @@ table {
 .table-bordered tbody:last-child tr:last-child td:last-child,
 %table-bordered tbody:last-child tr:last-child td:last-child {
     border-radius: 0 0 $table-bordered-child-radius 0;
+}
+
+// ----------------------------------------
+// // ------ demo @extend example ------
+// ----------------------------------------
+
+article {
+    table {
+        @extend %table;
+        @extend %table-bordered;
+        @extend %table-condensed;
+    }
 }
