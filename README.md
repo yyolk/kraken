@@ -35,6 +35,8 @@ Kraken is an open-source project. [Learn how you can get involved.](http://cferd
 Kraken-Sass follows the Major versions of Kraken and its own extra Minor version for features and bugfixes.
 
 ## Changelog (Kraken-Sass)
+* v2.1.6 (June, 22, 2013)
+  * Update Apple and Microsoft touch icons and `img/readme.md`.
 * v2.1.5 (June, 22, 2013)
   * added addons as subtrees and _partials for each one in `scss/lib/addons` and update directory structure.
 * v2.1.4 (June, 13, 2013)
