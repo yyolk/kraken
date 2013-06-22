@@ -20,30 +20,36 @@
 }
 
 .btn,
+%btn,
 .btn:hover,
+%btn:hover,
 a .btn:hover {
     color: $btn-hover-color;
 }
 
 .btn:hover,
+%btn:hover,
 a .btn:hover {
     background-color: $btn-hover-bgcolor;
     border-color: $btn-hover-border;
     text-decoration: none;
 }
 
-.btn-blue, %btn-blue {
+.btn-blue,
+%btn-blue {
     background-color: $primary;
     border-color: $primary;
 }
 
 .btn-blue:hover,
+%btn-blue:hover,
 a .btn-blue:hover {
     background-color: $secondary;
     border-color: $secondary;
 }
 
-.btn-large, %btn-large {
+.btn-large,
+%btn-large {
     padding: .588235294em .882352941em;
     font-size: 1em;
     line-height: normal;
@@ -51,6 +57,7 @@ a .btn-blue:hover {
 }
 
 .btn-block,
+%btn-block,
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
@@ -64,17 +71,22 @@ input[type="button"].btn-block {
             box-sizing: border-box;
 }
 
-.btn-block + .btn-block {
+.btn-block + .btn-block,
+%btn-block + .btn-block {
     margin-top: .333333333em;
 }
 
-button, .btn, %btn {
+button,
+.btn,
+%btn {
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
     -webkit-appearance: none;
 }
 
-.btn:first-child, input.btn {
+.btn:first-child,
+%btn:first-child,
+input.btn {
     margin-left: 0;
 }

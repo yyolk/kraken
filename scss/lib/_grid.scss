@@ -2,7 +2,8 @@
 /*  Structure and layout */
 
 // extend for clearfix
-.cfix, %cfix {
+.cfix,
+%cfix {
         &:before, &:after {
             display: table;
             content: "";
@@ -15,7 +16,8 @@
 
 /*  Mobile-first. Single-column layout by default
  *  Container sets the maximum page width. Adjust as needed. */
-.container, %container {
+.container,
+%container {
     max-width: $containerMaxWidth;
     width: $containerWidth;
     margin-left: auto;
@@ -35,7 +37,8 @@
     }
 
     [class^="grid-"],
-    [class*="grid-"] {
+    [class*="grid-"],
+    %grid-float {
         float: left;
         width: 96.969696969697%;
         margin-left: 1.515151515152%;
@@ -70,6 +73,13 @@
 
 /*  6-column grid  */
 @media (min-width: #{$lap}) {
+
+    %grid-float {
+        float: left;
+        width: 96.969696969697%;
+        margin-left: 1.515151515152%;
+        margin-right: 1.515151515152%;
+    }
 
     .grid-1,
     %grid-1 {
@@ -167,36 +177,47 @@
 @mixin grid($size) {
     @if $size == 1 {
         @extend %grid-1;
+        @extend %grid-float;
     }
     @else if $size == 2 {
         @extend %grid-2;
+        @extend %grid-float;
     }
-    @else if $size == third {
+    @else if $size == one-third {
         @extend %grid-third;
+        @extend %grid-float;
     }
     @else if $size == img {
         @extend %grid-img;
+        @extend %grid-float;
     }
     @else if $size == 3 {
         @extend %grid-3;
+        @extend %grid-float;
     }
     @else if $size == one-half {
         @extend %grid-half;
+        @extend %grid-float;
     }
     @else if $size == 4 {
         @extend %grid-4;
+        @extend %grid-float;
     }
     @else if $size == two-thirds {
         @extend %grid-two-thirds;
+        @extend %grid-float;
     }
     @else if $size == 5 {
         @extend %grid-5;
+        @extend %grid-float;
     }
     @else if $size == 6 {
         @extend %grid-6;
+        @extend %grid-float;
     }
     @else if $size == full {
         @extend %grid-full;
+        @extend %grid-float;
     }
 }
 
