@@ -16,6 +16,7 @@ Kraken is a lightweight, mobile-first boilerplate for front-end web developers. 
 * Mixins for the grid and more (have a look)
 * A Settings file where you can easily adjust any project variable
 * Modular setup of partials so that you can include just the modules you care to use.
+* Most of the addons will be available in the `/addons` dir as well as _imports for them in `scss/lib/addons`
 
 ## How It Works
 Getting started with Kraken-Sass is really easy. [View the online tutorial](http://jwebcat.github.com/kraken-sass/).
@@ -34,6 +35,8 @@ Kraken is an open-source project. [Learn how you can get involved.](http://cferd
 Kraken-Sass follows the Major versions of Kraken and its own extra Minor version for features and bugfixes.
 
 ## Changelog (Kraken-Sass)
+* v2.1.5 (June, 22, 2013)
+  * added addons as subtrees and _partials for each one in `scss/lib/addons` and update directory structure.
 * v2.1.4 (June, 13, 2013)
   * moved `%cfix` to _grid.scss and update `grid()` and `container()` mixins to @extend `%cfix`
 * v2.1.3 (June, 12, 2013)
@@ -61,9 +64,9 @@ Kraken-Sass follows the Major versions of Kraken and its own extra Minor version
   * Initial release.
 
 ## TODO
-* adjust gh-pages for sass version of kraken
-* convert each of the add-ons to SASS and have them in a subdir
-* create sub-trees for each add-on
+[] adjust gh-pages for mixins
+[] convert the rest of the add-ons to SASS and have them in a subdir
+[] finish creating sub-trees for each add-on
 
 ## License
 Kraken is free to use under the [MIT License](http://gomakethings.com/mit/).
