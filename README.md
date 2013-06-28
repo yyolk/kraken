@@ -35,6 +35,8 @@ Kraken is an open-source project. [Learn how you can get involved.](http://cferd
 Kraken-Sass follows the Major versions of Kraken and its own extra Minor version for features and bugfixes.
 
 ## Changelog (Kraken-Sass)
+* v2.1.8 (June, 28, 2013)
+  * add sassmatic as an addon for epic Sass image filters
 * v2.1.7 (June, 28, 2013)
   * Change media query variables to be more logical and added customized css-wizardry grids as an addon
 * v2.1.6 (June, 22, 2013)
