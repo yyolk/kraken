@@ -101,3 +101,83 @@ $baseline: $base-font-size;
 //     top: 27.2px;
 //     top: 9.41176rem;
 // }
+
+// // -------------------------------------------------------------------------------
+// // mixin for element breakpoints by @micahgodbolt modified by @jpavon found here
+// // https://gist.github.com/micahgodbolt/5851228
+// // -------------------------------------------------------------------------------
+
+@mixin respond-to($queries...) {
+    $length: length($queries);
+    @for $i from 1 through $length{
+        @if $i % 2 == 1 {
+            @media #{nth($queries, $i)} {
+                #{nth($queries, $i+1)} {
+                  @content;
+                }
+            }
+        }
+    }
+}
+
+// // ----------------------------------------------------
+// // demo usage of respond-to for element queries
+// // ----------------------------------------------------
+
+// // first define custom breakpoints, the defaults are defined in _config.scss
+
+// $p: 'only screen and (min-width : #{$portable})';
+// $l: 'only screen and (min-width : #{$lap})';
+// $d: 'only screen and (min-width : #{$desk})';
+
+
+// // -----------------------------------------------------------------
+// // Demo usage of respond -to
+// // -----------------------------------------------------------------
+
+// @include respond-to($s, '.content',
+//                     $m, 'aside') {
+//     .schedule-component {
+//         float: left;
+//         width: 100%;
+//         position:relative;
+//     }
+//     .schedule-component ul,
+//     .schedule-component li {
+//         list-style: none;
+//         position: absolute;
+//         margin: 0;
+//         padding: 0;
+//     }
+// }
+
+// // css output of above example
+
+// @media only screen and (min-width: 30em) {
+//   .content .schedule-component {
+//     float: left;
+//     width: 100%;
+//     position: relative;
+//   }
+//   .content .schedule-component ul,
+//   .content .schedule-component li {
+//     list-style: none;
+//     position: absolute;
+//     margin: 0;
+//     padding: 0;
+//   }
+// }
+// @media only screen and (min-width: 90em) {
+//   aside .schedule-component {
+//     float: left;
+//     width: 100%;
+//     position: relative;
+//   }
+//   aside .schedule-component ul,
+//   aside .schedule-component li {
+//     list-style: none;
+//     position: absolute;
+//     margin: 0;
+//     padding: 0;
+//   }
+// }
