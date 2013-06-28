@@ -5,13 +5,13 @@
       @media  only screen and (max-width: $break-small) { @content; }
     }
     @else if $media == medium-screens {
-      @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+      @media only screen and (min-width: $break-small + .05) and (max-width: $break-large - .05) { @content; }
     }
     @else if $media == wide-screens {
       @media only screen and (min-width: $break-large) { @content; }
     }
     @else if $media == retina-screens {
-      @media  only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) { @content; }
+      @media  only screen and (min-width: $break-small + .05) and (max-width: $break-large - .05) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) { @content; }
     }
 }
 
