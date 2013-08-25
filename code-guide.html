@@ -46,41 +46,42 @@
 	        <p>Some basic standards to ensure that Kraken add-ons and forks share a common language and approach.</p>
 
 
-            <h2 class="text-center">Table of Contents</h2>
+            <h2 class="text-center" id="toc">Table of Contents</h2>
 
             <ul>
-                <li><a href="#golden-rule">The Golden Rule</a></li>
+                <li><a class="scroll" href="#golden-rule">The Golden Rule</a></li>
                 <li>
-                    <a href="#html">HTML</a>
+                    <a class="scroll" href="#html">HTML</a>
                     <ul>
-                        <li><a href="#html-syntax">HTML Syntax</a></li>
-                        <li><a href="#html-attribute-order">Attribute Order</a></li>
+                        <li><a class="scroll" href="#html-syntax">HTML Syntax</a></li>
+                        <li><a class="scroll" href="#html-attribute-order">Attribute Order</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#css">CSS</a>
+                    <a class="scroll" href="#css">CSS</a>
                     <ul>
-                        <li><a href="#css-syntax">CSS Syntax</a></li>
-                        <li><a href="#css-declaration-order">Declaration Order</a></li>
-                        <li><a href="#css-formatting-exceptions">Formatting Exceptions</a></li>
-                        <li><a href="#css-class-names">Class Names</a></li>
-                        <li><a href="#css-selectors">Selectors</a></li>
+                        <li><a class="scroll" href="#css-syntax">CSS Syntax</a></li>
+                        <li><a class="scroll" href="#css-declaration-order">Declaration Order</a></li>
+                        <li><a class="scroll" href="#css-formatting-exceptions">Formatting Exceptions</a></li>
+                        <li><a class="scroll" href="#css-class-names">Class Names</a></li>
+                        <li><a class="scroll" href="#css-selectors">Selectors</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#js">JavaScript</a>
+                    <a class="scroll" href="#js">JavaScript</a>
                     <ul>
-                        <li><a href="#js-syntax">JavaScript Syntax</a></li>
-                        <li><a href="#js-progressive-enhancement">Progressive Enhancement</a></li>
+                        <li><a class="scroll" href="#js-vanilla-syntax">Vanilla JS Syntax</a></li>
+                        <li><a class="scroll" href="#js-jquery-syntax">jQuery Syntax</a></li>
+                        <li><a class="scroll" href="#js-progressive-enhancement">Progressive Enhancement</a></li>
                     </ul>
                 </li>
-                <li><a href="#organize-document">Organization & Documentation</a></li>
+                <li><a class="scroll" href="#organize-document">Organization & Documentation</a></li>
                     <ul>
-                        <li><a href="od-guidelines">Guidelines</a></li>
-                        <li><a href="#od-section-headings">Section Headings</a></li>
-                        <li><a href="#od-inline-documentation">Inline Documentation</a></li>
+                        <li><a class="scroll" href="od-guidelines">Guidelines</a></li>
+                        <li><a class="scroll" href="#od-section-headings">Section Headings</a></li>
+                        <li><a class="scroll" href="#od-inline-documentation">Inline Documentation</a></li>
                     </ul>
-                <li><a href="#thanks">Thanks</a></li>
+                <li><a class="scroll" href="#thanks">Thanks</a></li>
             </ul>
 
             <hr>
@@ -300,11 +301,43 @@ h1, h2, h2, h4, h5, h6 {
 
             <h1 class="text-center" id="js">JavaScript</h1>
 
-	        
-	        <h2 class="text-center" id="js-syntax">JavaScript Syntax</h2>
+            <p>Always use vanilla JS or jQuery for add-ons (unless, of course, you're forking Kraken to another framework).</p>
+
+
+	        <h2 class="text-center" id="js-vanilla-syntax">Vanilla JS Syntax</h2>
 
             <ul>
-                <li>Always use vanilla JS or jQuery for add-ons (unless, of course, you're forking Kraken to another framework).</li>
+                <li>Wrap all functions in an <a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">IIFE</a> (immediately invoked function expression).</li>
+                <li>Use camelCase for all variables.</li>
+                <li>If you're using modern API's, include a feature test.</li>
+            </ul>
+
+            <p class="space-bottom-small"><strong>Incorrect example:</strong></p>
+
+            <pre><code class="language-javascript">var collapse_toggle = document.querySelectorAll('.collapse-toggle');
+[].forEach.call(collapse_toggle, function (toggle) {
+    toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+    }, false);
+});</code></pre>
+
+            <p class="space-bottom-small"><strong>Correct example:</strong></p>
+
+            <pre><code class="language-javascript">(function() {
+    if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+        var collapseToggle = document.querySelectorAll('.collapse-toggle');
+        [].forEach.call(collapseToggle, function (toggle) {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+            }, false);
+        });
+    }
+})();</code></pre>
+
+	        
+	        <h2 class="text-center" id="js-jquery-syntax">jQuery Syntax</h2>
+
+            <ul>
                 <li>Wrap all functions in a <code>.noConflict()</code> ready function.</li>
                 <li>Use camelCase for all variables.</li>
                 <li>Omit the unneeded <code>$</code> before variables.</li>
@@ -332,7 +365,12 @@ h1, h2, h2, h4, h5, h6 {
 
             <p>JavaScript should always be a progressive enhancement. Check for JS support before hiding or altering content.</p>
 
-            <p class="space-bottom-small"><strong>JavaScript:</strong></p>
+            <p class="space-bottom-small"><strong>Vanilla JS:</strong></p>
+            <pre><code class="language-javascript">if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+    document.documentElement.className += 'js';
+}</code></pre>
+
+            <p class="space-bottom-small"><strong>jQuery:</strong></p>
             <pre><code class="language-javascript">(function($) {
     $(function () {
         $('body').addClass('js'); // On page load, add the .js class to the <body> element.
