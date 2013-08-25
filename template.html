@@ -56,20 +56,9 @@
     &lt;title&gt;&lt;/title&gt;
     &lt;meta name="description" content=""&gt;
 
-    
     &lt;!-- Mobile Screen Resizing --&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 
-    
-    &lt;!-- stylesheet --&gt;
-    &lt;link rel="stylesheet" href="css/kraken.css" type="text/css"&gt;
-
-    &lt;!-- HTML5 Shim for IE 6-8 --&gt;
-    &lt;!--[if lt IE 9]&gt;
-      &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-    &lt;![endif]--&gt;
-
-   
     &lt;!-- Favicon --&gt;
     &lt;link rel="shortcut icon" type="image/ico" href="img/favicon.ico"&gt;
 
@@ -83,10 +72,16 @@
     &lt;meta name="msapplication-TileColor" content="#0088cc"&gt;
     &lt;meta name="msapplication-TileImage" content="img/ms-touch-icon.png"&gt;
 
+    &lt;!-- stylesheet --&gt;
+    &lt;link rel="stylesheet" href="css/kraken.css" type="text/css"&gt;
+
+    &lt;!-- HTML5 Shim for IE 6-8 --&gt;
+    &lt;!--[if lt IE 9]&gt;
+      &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
   &lt;/head&gt;
 
   &lt;body&gt;
-
 
     &lt;!-- Old Browser Warning --&gt;
     &lt;!-- If you're supporting IE 6-7, remove this --&gt;
@@ -96,7 +91,6 @@
         &lt;/section&gt;
     &lt;![endif]--&gt;
 
-
     &lt;section class="container"&gt;
 
       &lt;h1&gt;Hello World!&lt;/h1&gt;
@@ -104,8 +98,6 @@
       &lt;p&gt;Add your content here.&lt;/p&gt;
 
     &lt;/section&gt;
-
-    
 
     &lt;!-- Javascript --&gt;
     &lt;!-- In the footer for better performance --&gt;
@@ -138,13 +130,13 @@
 
             <p>Modern mobile browsers often "fake" a desktop sized viewport so that websites that aren't mobile-optimized aren't weirdly zoomed in when you load them. The viewport tag tells browsers that the viewport should be the size of the screen (because our site <em>is</em> mobile-optimize).</p>
 
-            <h3>HTML5 Shim</h3>
-
-            <p>Internet Explorer 8 and lower do not recognize the new HTML5 semantic elements (like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and so on). The HTML5 Shim is a little JavaScript snippet that we load conditionally on older IE browsers to ensure those elements render correctly.</p>
-
             <h3>Icons</h3>
 
             <p>The site favicon and touch icons for when people bookmark your site or app on the homescreen of their mobile device. This now includes support for Windows phones, too. (Icons aren't included with Kraken. Add them to <code>img</code> folder.)</p>
+
+            <h3>HTML5 Shim</h3>
+
+            <p>Internet Explorer 8 and lower do not recognize the new HTML5 semantic elements (like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and so on). The HTML5 Shim is a little JavaScript snippet that we load conditionally on older IE browsers to ensure those elements render correctly.</p>
 
             <h3>Old Browser Warning</h3>
 
