@@ -1,0 +1,17 @@
+{
+  "name": "kraken",
+  "repo": "yyolk/kraken",
+  "description": "A lightweight, mobile-first boilerplate for front-end web developers.",
+  "version": "2.3",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "kraken.css"
+  ]
+}
